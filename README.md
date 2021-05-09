@@ -44,6 +44,6 @@ See the documentation for instructions, or `ARCHITECTURE.md` for a quick overvie
 
 Please read GitHub's Projects page for this repo in case your idea will become irrelevant soon, or is already being worked on.
 
-Code style: please follow PEP 8, except for Qt-related names and signals, which should use camelCase. Please use tabs for indentation and don't go over 80 columns per line (with tabs counting as 4) except for closing delimiters. Do your best to write good docstrings (especially for public APIs) and keep them updated; use the [Sphinx style](https://sphinx-rtd-tutorial.readthedocs.io/en/latest/docstrings.html).
+Code style: please follow PEP 8, except for signals and certain names imported from Qt, which should use camelCase. Please use tabs for indentation and don't go over 80 columns per line (with tabs counting as 4) except for closing delimiters. Do your best to write good docstrings (especially for public APIs) and keep them updated; use the [Sphinx style](https://sphinx-rtd-tutorial.readthedocs.io/en/latest/docstrings.html).
 
 All contributions are welcome!
