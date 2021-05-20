@@ -34,7 +34,7 @@ Extensions are expected to need only the following classes (and/or their subclas
 **Chatter** impl. in `classes.py`  
 **Chat** impl. in `classes.py`  
 **Message** impl. in `classes.py`  
-**Command** impl. in `commands.py`: the definition of trigger(s) and action(s) for a specific command
+**Command** impl. in `command.py`: the definition of trigger(s) and action(s) for a specific command
 
 All of these can be accessed from the `extapi` module directly.
 
@@ -50,7 +50,7 @@ A list of callback decorators is available in the [extAPI documentation](null). 
 
 ## Internals: starting the bot
 
-ChattyBoi can be launched as GUI or Headless/TUI. In both situations, the process of loading a profile is the same; an instance of Bot is created. This is implemented in `main.py`, and the Bot class is implemented in `bot.py`. Functionality related to retrieving data from a profile is implemented in `profile.py`. The `Extension` class, along with the mechanism for importing extensions and creating Extension objects, is implemented in `extensions.py`.
+ChattyBoi can be launched as GUI or headless. In both situations, the process of loading a profile is the same; an instance of Bot is created. This is implemented in `main.py`, and the Bot class is implemented in `bot.py`. Functionality related to retrieving data from a profile is implemented in `profile.py`. The `Extension` class, along with the mechanism for importing extensions and creating Extension objects, is implemented in `extensions.py`.
 
 After a `Bot` was created, it is initialized. This logic is implemented in the class. First, the profile's metadata is loaded, which contains the list of enabled extensions. Next, the extensions' metadata is loaded, which is used to figure out the load order.
 
